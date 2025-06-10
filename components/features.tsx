@@ -1,25 +1,35 @@
-import { Brain, Cloud, Shield, Zap } from "lucide-react"
+import { Palette, Zap, Smartphone, BarChart3, Shield, Sparkles } from "lucide-react"
 
 const features = [
   {
-    name: "AI-Powered Analytics",
-    description: "Harness the power of machine learning to derive actionable insights from your data.",
-    icon: Brain,
+    name: "Beautiful Templates",
+    description: "Choose from dozens of stunning, customizable templates designed for every niche and style.",
+    icon: Palette,
   },
   {
-    name: "Cloud-Native Architecture",
-    description: "Scalable, resilient, and efficient solutions built for the modern cloud ecosystem.",
-    icon: Cloud,
+    name: "Lightning Fast",
+    description: "Create your microsite in minutes with our intuitive drag-and-drop editor.",
+    icon: Zap,
   },
   {
-    name: "Enterprise-Grade Security",
-    description: "State-of-the-art security measures to protect your most valuable assets.",
+    name: "Mobile Optimized",
+    description: "Every page looks perfect on all devices - desktop, tablet, and mobile.",
+    icon: Smartphone,
+  },
+  {
+    name: "Analytics Dashboard",
+    description: "Track clicks, views, and engagement with detailed analytics and insights.",
+    icon: BarChart3,
+  },
+  {
+    name: "Custom Domains",
+    description: "Use your own domain or get a free subdomain with our premium plans.",
     icon: Shield,
   },
   {
-    name: "High-Performance Systems",
-    description: "Optimized for speed and efficiency, our solutions deliver unparalleled performance.",
-    icon: Zap,
+    name: "Social Integration",
+    description: "Seamlessly integrate with all your social media platforms and tools.",
+    icon: Sparkles,
   },
 ]
 
@@ -27,12 +37,12 @@ export default function Features() {
   return (
     <section className="container space-y-16 py-24 md:py-32">
       <div className="mx-auto max-w-[58rem] text-center">
-        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Cutting-Edge Solutions</h2>
+        <h2 className="font-bold text-3xl leading-[1.1] sm:text-3xl md:text-5xl">Everything You Need</h2>
         <p className="mt-4 text-muted-foreground sm:text-lg">
-          Discover how Amane Soft can transform your business with our innovative technologies.
+          Powerful features to help you create the perfect link-in-bio page for your brand.
         </p>
       </div>
-      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2">
+      <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
         {features.map((feature) => (
           <div key={feature.name} className="relative overflow-hidden rounded-lg border bg-background p-8">
             <div className="flex items-center gap-4">

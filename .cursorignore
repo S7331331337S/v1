@@ -1,0 +1,5 @@
+# Add directories or file patterns to ignore during indexing (e.g. foo/ or *.csv)
+
+DATABASE_URL="file:./dev.db"
+NEXTAUTH_SECRET="your-secret-key-here"
+NEXTAUTH_URL="http://localhost:3000"
