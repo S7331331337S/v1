@@ -12,49 +12,36 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 max-w-screen-2xl items-center justify-between">
-        {/* Logo */}
-        <Link href="/" className="flex items-center space-x-2">
-          <div className="p-2 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg">
-            <Sparkles className="h-5 w-5 text-white" />
-          </div>
-          <span className="font-bold text-xl">LinkStream</span>
+      <div className="container flex h-14 max-w-screen-2xl items-center">
+        <Link href="/" className="mr-6 flex items-center space-x-2">
+          <Sparkles className="h-5 w-5 text-blue-500" />
+          <span className="font-bold">LinkStream</span>
         </Link>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-8 text-sm font-medium">
-          <Link href="/templates" className="transition-colors hover:text-primary relative group">
+        <nav className="hidden md:flex flex-1 items-center space-x-6 text-sm font-medium">
+          <Link href="/templates" className="transition-colors hover:text-primary">
             Templates
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="/examples" className="transition-colors hover:text-primary relative group">
+          <Link href="/examples" className="transition-colors hover:text-primary">
             Examples
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="/pricing" className="transition-colors hover:text-primary relative group">
+          <Link href="/pricing" className="transition-colors hover:text-primary">
             Pricing
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="/blog" className="transition-colors hover:text-primary relative group">
+          <Link href="/blog" className="transition-colors hover:text-primary">
             Blog
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 transition-all duration-300 group-hover:w-full"></span>
           </Link>
         </nav>
-
-        {/* Desktop CTA Buttons */}
         <div className="hidden md:flex items-center space-x-4">
           <Link href="/dashboard">
-            <Button variant="ghost" size="sm" className="hover:bg-muted/50">
+            <Button variant="ghost" size="sm">
               Dashboard
             </Button>
           </Link>
           <Link href="/dashboard">
-            <Button size="sm" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white shadow-lg hover:shadow-xl transition-all duration-300">
-              Create Page
-            </Button>
+            <Button size="sm">Create Page</Button>
           </Link>
         </div>
-
+        
         {/* Mobile Menu Button */}
         <button
           className="md:hidden p-2 hover:bg-muted/50 rounded-lg transition-colors"
@@ -105,7 +92,7 @@ export default function Navbar() {
                 </Button>
               </Link>
               <Link href="/dashboard" onClick={() => setIsMenuOpen(false)}>
-                <Button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white">
+                <Button className="w-full">
                   Create Page
                 </Button>
               </Link>
