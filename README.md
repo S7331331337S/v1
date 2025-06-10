@@ -1,30 +1,107 @@
 # Streamline Landing Page
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A modern Next.js landing page built with Tailwind CSS and Radix UI components.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/mstrmndhub/v0-streamline-landing-page)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/jmC5ereBRn5)
+## Features
 
-## Overview
+- 🎨 Modern UI with Tailwind CSS
+- 🧩 Radix UI components for accessibility
+- 📱 Responsive design
+- 🎥 Daily.co video integration
+- 🔐 NextAuth authentication
+- 📊 Analytics dashboard
+- 🎯 Landing page builder
+- 💰 Pricing pages
+- 📝 Blog functionality
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## Tech Stack
+
+- **Framework**: Next.js 15
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI
+- **Database**: Prisma with PostgreSQL
+- **Authentication**: NextAuth.js
+- **Video**: Daily.co
+- **Deployment**: Vercel (recommended)
+
+## Getting Started
+
+1. **Clone the repository**
+   ```bash
+   git clone <your-new-repo-url>
+   cd <your-project-name>
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   pnpm install
+   ```
+
+3. **Set up environment variables**
+   Create a `.env.local` file with:
+   ```
+   DATABASE_URL="your-database-url"
+   NEXTAUTH_SECRET="your-nextauth-secret"
+   NEXTAUTH_URL="http://localhost:3000"
+   DAILY_API_KEY="your-daily-api-key"
+   ```
+
+4. **Set up the database**
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   ```
+
+5. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   pnpm dev
+   ```
+
+6. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Project Structure
+
+```
+├── app/                    # Next.js app directory
+│   ├── api/               # API routes
+│   ├── dashboard/         # Dashboard pages
+│   ├── pricing/           # Pricing pages
+│   └── ...
+├── components/            # Reusable components
+│   └── ui/               # UI components
+├── lib/                   # Utility functions
+├── prisma/               # Database schema
+└── public/               # Static assets
+```
 
 ## Deployment
 
-Your project is live at:
+### Deploy to Vercel (Recommended)
 
-**[https://vercel.com/mstrmndhub/v0-streamline-landing-page](https://vercel.com/mstrmndhub/v0-streamline-landing-page)**
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Add your environment variables in Vercel dashboard
+4. Deploy!
 
-## Build your app
+### Manual Deployment
 
-Continue building your app on:
+```bash
+npm run build
+npm start
+```
 
-**[https://v0.dev/chat/projects/jmC5ereBRn5](https://v0.dev/chat/projects/jmC5ereBRn5)**
+## Contributing
 
-## How It Works
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## License
+
+MIT License - see LICENSE file for details
