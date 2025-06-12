@@ -28,13 +28,13 @@ export interface DailyMeeting {
 }
 
 class DailyCoService {
-  private apiKey: string
+  public apiKey: string
   private baseUrl: string
   private domain: string
 
   constructor() {
     // Use the provided API key
-    this.apiKey = '0865a80d074a17aab9066930a52f890b59a639693f7caee3073e6ac932a0b1b0'
+    this.apiKey = '0adc7572de6e1944a204dd94d9a7ebcdb09cbba5a8bf458ef3cf1aa9a243fd3a'
     this.baseUrl = 'https://api.daily.co/v1'
     this.domain = 'mstrmnd.daily.co' // Using the domain from the user's Daily.co account
   }

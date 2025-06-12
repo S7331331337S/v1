@@ -29,7 +29,7 @@ Add the following to your `.env` file:
 
 ```env
 # Daily.co Integration
-DAILY_API_KEY="your_actual_api_key_here"
+DAILY_API_KEY="0adc7572de6e1944a204dd94d9a7ebcdb09cbba5a8bf458ef3cf1aa9a243fd3ae"
 ```
 
 ### 3. Update Your Daily.co Domain
@@ -38,7 +38,7 @@ In `lib/daily-co.ts`, update the `generateRoomUrl` function to use your Daily.co
 
 ```typescript
 generateRoomUrl(roomName: string, token?: string): string {
-  const baseUrl = `https://your-domain.daily.co/${roomName}`
+  const baseUrl = `https:/mstrmnd.daily.co/${roomName}`
   return token ? `${baseUrl}?t=${token}` : baseUrl
 }
 ```
